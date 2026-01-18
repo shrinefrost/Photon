@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="header-background"></div>
+    <div class="header-content">
+      <div class="logo-section">
+        <a class="logo" href="index.html">
+          <span class="logo-icon">📸</span>
+          <span class="logo-text">Photon</span>
+        </a>
+        <p class="tagline">Discover stunning imagery from around the world</p>
+      </div>
+      <form class="search-form">
+        <div class="search-wrapper">
+          <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+          </svg>
+          <input type="text" name="search" class="search-input" placeholder="Search for photos...">
+          <button type="submit" class="submit-btn">
+            <span>Search</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </header>
+  <main>
+    <div class="gallery"></div>
+  </main>
+  <button class="more-btn">More Photos</button>
+
+  <!-- NEW MODAL SECTION -->
+  <div class="modal-overlay" id="photoModal">
+    <div class="modal-card">
+      <button class="close-btn">&times;</button>
+      <div class="modal-content">
+        <img src="" alt="Photo" class="modal-image">
+        <div class="modal-details">
+          <h3 class="photographer-name">Photographer Name</h3>
+          <p class="photo-dimensions">Dimensions</p>
+          <a href="" class="download-btn" download>
+            <button>Download Photo</button>
+          </a>
+          <a href="" class="photographer-link" target="_blank">
+            <button class="photographer-btn">View Photographer</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END NEW MODAL SECTION -->
+
+</body>
+<script src="app.js"></script>
+
+</html>
